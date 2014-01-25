@@ -7,7 +7,6 @@
 
 class plugin_strata_type_dot extends plugin_strata_type {
     function __construct() {
-        parent::__construct();
         $this->helper =& plugin_load('helper', 'exaltedwiki');
     }
 
