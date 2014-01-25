@@ -22,7 +22,7 @@ class syntax_plugin_exaltedwiki_dots extends DokuWiki_Syntax_Plugin {
     }
 
    public function handle($match, $state, $pos, Doku_Handler &$handler){
-        preg_match('/:([0-9]+)(?:([0-9]+)(?:g([0-9]+))?)?:/', $match, $m);
+        preg_match('@:([0-9]+)(?:/([0-9]+)(?:g([0-9]+))?)?:@', $match, $m);
         list(, $value, $track, $grouping) = $m;
 
         if(!isset($track)) $track = 5;
