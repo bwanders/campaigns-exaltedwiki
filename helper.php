@@ -36,6 +36,6 @@ class helper_plugin_exaltedwiki extends DokuWiki_Plugin {
             $dots = array($dots);
         }
 
-        return '<big>' . implode(' ', array_map('implode', $dots)) . '</big>';
+        return '<span class="dot-track">' . implode(' ', array_map('implode', $dots)) . '</span>';
     }
 }
