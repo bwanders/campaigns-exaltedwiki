@@ -16,10 +16,7 @@ class helper_plugin_exaltedwiki extends DokuWiki_Plugin {
      * @param track optional length of the track
      * @param grouping optional group size
      */
-    public function dotTrack($value, $track=1, $grouping=0) {
-        static $open = '&#9675;';
-        static $closed = '&#9679;';
-
+    public function dotTrack($value, $track=1, $grouping=0, $open='&#9675;', $closed='&#9679;') {
         // create filled dots
         $dots =  array_fill(0, $value, $closed);
 

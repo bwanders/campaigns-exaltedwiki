@@ -1,7 +1,7 @@
 base exaltedwiki
 author Brend Wanders
 email b.wanders@13w.nl
-date 2014-01-25
+date 2016-02-23
 name Exalted Campaign Wiki
 desc Adds Exalted Campaign wiki features (like the dot type)
 url http://github.com/bwanders/campaigns-exaltedwiki
