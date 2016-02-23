@@ -38,7 +38,7 @@ class plugin_strata_type_box extends plugin_strata_type {
 
     function getInfo() {
         return array(
-            'desc'=>'Shows numbers as a string of dots. The type hint is used to add a track size (as \'tN\') and group size (as \'gN\').',
+            'desc'=>'Shows numbers as a string of boxes. The type hint is used to add a track size (as \'tN\') and group size (as \'gN\').',
             'tags'=>array('numeric'),
             'hint'=>'\'tN\', \'gN\', or both'
         );
