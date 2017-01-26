@@ -21,7 +21,7 @@ class syntax_plugin_exaltedwiki_dots extends DokuWiki_Syntax_Plugin {
         $this->Lexer->addSpecialPattern(':[0-9]+(?:/[0-9]+(?:g[0-9]+)?)?:',$mode,'plugin_exaltedwiki_dots');
     }
 
-   public function handle($match, $state, $pos, Doku_Handler &$handler){
+   public function handle($match, $state, $pos, Doku_Handler $handler){
         preg_match('@:([0-9]+)(?:/([0-9]+)(?:g([0-9]+))?)?:@', $match, $m);
         list(, $value, $track, $grouping) = $m;
 
@@ -31,7 +31,7 @@ class syntax_plugin_exaltedwiki_dots extends DokuWiki_Syntax_Plugin {
         return array($value, $track, $grouping);
     }
 
-   public function render($mode, Doku_Renderer &$renderer, $data) {
+   public function render($mode, Doku_Renderer $renderer, $data) {
         list($value, $track, $grouping) = $data;
 
         if($mode != 'xhtml') {
